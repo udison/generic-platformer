@@ -60,6 +60,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_njl1x"]
+size = Vector2(16, 18)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -78,12 +79,13 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_njl1x")
 
 [node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.15
 one_shot = true
 
 [node name="Camera" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
