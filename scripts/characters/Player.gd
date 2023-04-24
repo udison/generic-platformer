@@ -47,7 +47,6 @@ func _physics_process(delta):
 	was_on_floor = is_on_floor()
 	move_and_slide()
 	handle_coyote_time()
-	print(jump_counter)
 
 
 func apply_gravity(delta: float) -> void:
@@ -124,8 +123,5 @@ func handle_animations() -> void:
 
 
 func handle_coyote_time():
-	coyote_timer.timeout.connect(func():
-		print('timed out!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-	)
 	if was_on_floor and !is_on_floor():
 		coyote_timer.start()
