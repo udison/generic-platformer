@@ -10,10 +10,10 @@ class_name Player
 var facing_right: bool = true
 
 # Jump
-@export var max_jump_height: float = 6 * 16
-@export var min_jump_height: float = 2 * 16
+@export var max_jump_height: float = 4 * 16
+@export var min_jump_height: float = 1 * 16
 @export var double_jump_height: float = 4 * 16
-@export var jump_duration: float = .6
+@export var jump_duration: float = .4
 @export var max_jumps: int = 2
 
 var gravity: float

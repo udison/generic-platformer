@@ -19,10 +19,9 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=480
 window/size/viewport_height=270
-window/size/window_width_override=1280
-window/size/window_height_override=720
+window/size/window_width_override=1366
+window/size/window_height_override=768
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
 
 [dotnet]
 
@@ -65,4 +64,5 @@ jump={
 
 [rendering]
 
+2d/snap/snap_2d_vertices_to_pixel=true
 textures/canvas_textures/default_texture_filter=0
